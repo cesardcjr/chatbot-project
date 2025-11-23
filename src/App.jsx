@@ -10,7 +10,7 @@ function App() {
   // const chatMessages = array[0];
   // const setChatMessages = array[1];
   return (
-    <div className="app-container">
+    <div classNameName="app-container">
       <ChatMessages chatMessages={chatMessages} />
       <ChatInput
         chatMessages={chatMessages}

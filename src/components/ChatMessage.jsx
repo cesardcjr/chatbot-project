@@ -19,14 +19,16 @@ function ChatMessage({ message, sender }) {
   // }
   return (
     <div
-      className={sender === "user" ? "chat-message-user" : "chat-message-robot"}
+      classNameName={
+        sender === "user" ? "chat-message-user" : "chat-message-robot"
+      }
     >
       {sender === "robot" && (
-        <img src={robotImg} className="chat-message-profile" />
+        <img src={robotImg} classNameName="chat-message-profile" />
       )}
-      <div className="chat-message-text">{message}</div>
+      <div classNameName="chat-message-text">{message}</div>
       {sender === "user" && (
-        <img src={userImg} className="chat-message-profile" />
+        <img src={userImg} classNameName="chat-message-profile" />
       )}
     </div>
   );
